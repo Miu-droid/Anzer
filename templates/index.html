@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+    *{
+        font-family:cursive;
+    }
+</style>
+<body>
+    <h1>{{greet}} {{nome}} {{gen}}.Welcome to text analyser.Enter your text below </h1>
+    <form action='/analyze' method="get">
+        <textarea name='text' style='margin:0px;width:1470px;height:93px;'></textarea>
+        <input type='checkbox' name="removep"> Remove Punctuation </br>
+        <input type='checkbox' name="capitalize"> UPPERCASE </br>
+        <input type='checkbox' name="linerem"> Remove New Line </br>
+        <button type="submit">Analyze Text</button>
+
+    </form>
+</body>
+</html>
